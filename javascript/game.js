@@ -15,7 +15,7 @@ console.log(CrystalValue4);
 
 var ScoreArray =[];
 
-
+var TotalScore=0;
 
 var Wins=0;
 
@@ -25,20 +25,20 @@ var GameNotification="Game In Progress";
 
 $(document).ready(function(){
 $('#randomspot').html(RandomNumber);
-
+$('#totalspot').html("0");
 $('#wincount').html(Wins);
 $('#losecount').html(Loses);
 $('#Notification').html(GameNotification);
 
 
 
-var TotalScore=0;
+
   $(".CrystalButton1").on("click", function() {
 
     TotalScore += CrystalValue1;
     $('#totalspot').html(TotalScore);
 
-    alert("New score: " + TotalScore);
+    
 
 if (TotalScore === RandomNumber) {
       $('#Notification').html("You Win!");
@@ -60,7 +60,7 @@ if (TotalScore === RandomNumber) {
     TotalScore += CrystalValue2;
     $('#totalspot').html(TotalScore);
 
-     alert("New score: " + TotalScore);
+     
 
 if (TotalScore === RandomNumber) {
       $('#Notification').html("You Win!");
@@ -82,7 +82,7 @@ if (TotalScore === RandomNumber) {
     TotalScore += CrystalValue3;
     $('#totalspot').html(TotalScore);
 
-     alert("New score: " + TotalScore);
+    
 
 if (TotalScore === RandomNumber) {
       $('#Notification').html("You Win!");
@@ -105,7 +105,7 @@ if (TotalScore === RandomNumber) {
     TotalScore += CrystalValue4;
     $('#totalspot').html(TotalScore);
 
-     alert("New score: " + TotalScore);
+     
 
 if (TotalScore === RandomNumber) {
       $('#Notification').html("You Win!");
@@ -125,5 +125,4 @@ if (TotalScore === RandomNumber) {
 
 
 });
-
  
