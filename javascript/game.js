@@ -1,17 +1,17 @@
 var RandomNumber = Math.floor((Math.random() * 120) + 19);
-console.log(RandomNumber);
+console.log("Random Number: " + RandomNumber);
 
 var CrystalValue1= Math.floor((Math.random() * 12) + 1);
-console.log(CrystalValue1);
+console.log("Value 1: " + CrystalValue1);
 
 var CrystalValue2= Math.floor((Math.random() * 12) + 1);
-console.log(CrystalValue2);
+console.log("Value 2: " + CrystalValue2);
 
 var CrystalValue3= Math.floor((Math.random() * 12) + 1);
-console.log(CrystalValue3);
+console.log("Value 3: " + CrystalValue3);
 
 var CrystalValue4= Math.floor((Math.random() * 12) + 1);
-console.log(CrystalValue4);
+console.log("Value 4: " + CrystalValue4);
 
 var ScoreArray =[];
 
@@ -159,6 +159,11 @@ if (TotalScore === RandomNumber) {
     CrystalValue2= Math.floor((Math.random() * 12) + 1);
     CrystalValue3= Math.floor((Math.random() * 12) + 1);
     CrystalValue4= Math.floor((Math.random() * 12) + 1);
+    console.log("Random Number: " + RandomNumber);
+    console.log("Value 1: " + CrystalValue1);
+    console.log("Value 2: " + CrystalValue2);
+    console.log("Value 3: " + CrystalValue3);
+    console.log("Value 4: " + CrystalValue4);
     TotalScore=0;
     GameNotification="Game In Progress"; }});
     
